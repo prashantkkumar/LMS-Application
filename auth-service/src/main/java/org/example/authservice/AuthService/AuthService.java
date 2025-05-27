@@ -1,27 +1,14 @@
 package org.example.authservice.AuthService;
 
 import org.example.authservice.AuthResponse.AuthResponse;
-import org.example.authservice.AuthUser.AuthUser;
 import org.springframework.amqp.rabbit.core.RabbitTemplate;
-import org.springframework.beans.factory.annotation.Autowired;
+
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
-
-
-import com.lms.auth.dto.AuthRequest;
-import com.lms.auth.dto.AuthResponse;
-import com.lms.auth.dto.OtpRequest;
-import com.lms.auth.dto.SignupRequest;
-import com.lms.auth.entity.User;
-import com.lms.auth.event.OtpEvent;
-import com.lms.auth.repository.UserRepository;
-import com.lms.auth.security.JwtTokenProvider;
-import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
-import org.springframework.security.crypto.password.PasswordEncoder;
-import org.springframework.stereotype.Service;
+
 
 import java.util.Optional;
 import java.util.Random;
